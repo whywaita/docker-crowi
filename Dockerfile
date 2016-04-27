@@ -1,4 +1,4 @@
-FROM node:4
+FROM node:4-slim
 
 MAINTAINER Bakudankun <bakudankun@gmail.com>
 
