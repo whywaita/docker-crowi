@@ -1,0 +1,22 @@
+version: '2'
+
+services:
+  crowi:
+    image: whywaita/crowi:1.4.0
+    links:
+      - mongo:db
+      - redis:redis
+      - elasticsearch:elasticsearch
+    ports:
+      - 8080:3000
+
+  mongo:
+    image: mongo
+    volumes:
+      - ./data:/data/db
+
+  redis:
+    image: redis:alpine
+
+  elasticsearch:
+    image: whywaita/docker-elasticsearch-kuromoji
