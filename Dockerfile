@@ -1,6 +1,6 @@
 FROM node:4
 
-MAINTAINER Bakudankun <bakudankun@gmail.com>
+MAINTAINER whywaita <whywaita@whywrite.it>
 
 ENV CROWI_VERSION v1.4.0
 ENV NODE_ENV production
