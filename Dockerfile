@@ -2,7 +2,7 @@ FROM node:4
 
 MAINTAINER whywaita <whywaita@whywrite.it>
 
-ENV CROWI_VERSION v1.4.0
+ENV CROWI_VERSION master
 ENV NODE_ENV production
 
 RUN apt-get update \
