@@ -29,7 +29,7 @@ docker run --name some-crowi -p 8080:3000 -d \
 MongoDBのコンテナを`db`として、Redisのコンテナを`redis`としてリンクできるようにしてあるので、例えば`docker-compose.yml`を用いて、`docker-compose up`を実行すれば`http://localhost:8080`にアクセスして使えるようになります。
 
 ```
-$ wget https://raw.githubusercontent.com/Bakudankun/docker-crowi/master/docker-compose.yml
+$ wget https://raw.githubusercontent.com/whywaita/docker-crowi/master/docker-compose.yml
 $ docker-compose up -d
 ```
 
@@ -44,6 +44,7 @@ $ docker-compose up -d
 - `PASSWORD_SEED`: ユーザーのパスワードからハッシュを生成するときにつかう種です。指定しなくても自動生成します。これが変更されると既に登録しているユーザーがログインできなくなるので注意してください。
 - `SECRET_TOKEN`: 署名されたcookieを確認するための秘密鍵。
 - `FILE_UPLOAD`: デフォルトで`local`になっています。`aws`や`none`を指定できます。
+- `ELASTICSEARCH_URI`: Elatic searchに接続するためのURI。
 
 
 ## ボリューム
